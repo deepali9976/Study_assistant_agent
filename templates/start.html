@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Summary Agent</title>
+    <link rel="stylesheet" href="/static/startstyle.css">
+</head>
+<body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.38/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/1jGx35Ka3X3ZsNZJ/scene.splinecode"></spline-viewer>
+    <div class="container">
+    
+        <form action="/new" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+            <input type="text" name="user_name" placeholder="Please Type Your Name " required>
+
+            <button class="button-82-pushable" id="submit-btn" type="submit" role="button">
+           <span class="button-82-shadow"></span>
+          <span class="button-82-edge"></span>
+          <span class="button-82-front text">
+             Proceed
+          </span>
+          </button>
+        </form>
+
+
+ 
+</body>
+</html>
+<script>
+function showLoading() {
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('btn-text').innerText = 'Just a minute...';
+  document.getElementById('loader').classList.remove('hidden');
+}
+</script>
+
+

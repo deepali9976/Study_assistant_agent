@@ -1,0 +1,28 @@
+{
+  "Deepali": [
+    {
+      "question": "",
+      "filename": "f3-the-game-rulebook.pdf"
+    },
+    {
+      "question": "",
+      "filename": "Sequence_Rules_EN.pdf"
+    },
+    {
+      "question": "",
+      "filename": "Sequence_Rules_EN.pdf"
+    }
+  ],
+  "deepali": [
+    {
+      "question": "Explain the rules of this Game to me",
+      "filename": "Sequence_Rules_EN.pdf"
+    }
+  ],
+  "": [
+    {
+      "question": "how many people can play this game",
+      "filename": "uploads/Sequence_Rules_EN.pdf"
+    }
+  ]
+}

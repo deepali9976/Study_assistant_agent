@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Summary Agent</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="wave-container">
+            <h1 class="wave-text">
+                <span>SMART</span> <span>STUDY</span> <span>ASSISTANT</span><span>&#128187; </span> 
+            </h1>
+             <div class="masking-container">
+            <h1 class="masked-text">Masked Animation</h1>
+        </div>
+         <p>&#128195;Upload your PDF files and get concise summaries with extra sources!</p>
+        <form action="/analyze" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+            <input type="file" name="pdf_file" accept=".pdf" required>
+            
+            <button id="submit-btn" type="submit">
+                <span id="btn-text">Summarize</span>
+                <span id="loader" class="hidden"></span>
+            </button>
+        </form>
+
+
+        {% if result %}
+            <h2>YOUR NOTES&#128393;</h2>
+            <div class="result-box">{{ result | safe }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<script>
+function showLoading() {
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('btn-text').innerText = 'Processing...';
+  document.getElementById('loader').classList.remove('hidden');
+}
+</script>
+

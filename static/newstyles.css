@@ -1,0 +1,140 @@
+body {
+  min-height: 100vh;     /* so it can grow with content */
+  height: auto;
+  overflow-x: hidden;
+  margin: 0;
+  background: #09040a;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+spline-viewer {
+  position: fixed;       /* Keeps it in the background */
+  top: 0;
+  left: 0;
+  width: 100vw;          /* Full width of the viewport */
+  height: 100vh;         /* Full height of the viewport */
+  z-index: -1;           /* Sends it behind your main content */
+}
+
+.container {
+  position: relative; /* Important so it sits above the spline-viewer */
+  z-index: 1;          /* Higher than -1, so it's above background */
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1%;
+    color: #dad9de;
+    margin-bottom: 30px;
+}
+
+
+h2{
+    text-align: center;
+    color: #e3e1e7;
+    margin-bottom: 20px;
+}
+form {
+  margin-top: 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+input[name="user_name"] {
+  flex: 1;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #7c6fec;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 70px;
+  background-color: #1a1a1a;
+  width: 100%;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 35px;
+}
+input[type="file"] {
+  flex: 1;
+  font-size: 100%;
+  width: 100%;
+  display: inline-block;
+  margin: px 0;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid #bfa4e7;
+  border-radius: 400px;
+  background-color: #050404;
+  color: #e3e1e7;
+}
+
+input[name="question"] {
+  flex: 1;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #c88fcf;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 70px;
+  background-color: #1a1a1a;
+  width: 100%;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+
+button {
+  flex: 1;
+  margin-left:15%;
+  align-self: auto;
+  background-color: #8d1beb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:disabled {
+  background-color: #c38ada;
+  cursor: not-allowed;
+}
+button:disabled::after {
+  content: "Processing...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4F46E5;
+}
+.result-box {
+  background-color: #080808;
+  color: #e3e1e7;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 10px;
+  max-width: 1200px;   /* Increased from 800px */
+  margin: 2rem auto;
+  overflow-y: auto;
+  max-height: 70vh; /* allow scrolling within */
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+

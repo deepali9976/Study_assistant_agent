@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Summary Agent</title>
+    <link rel="stylesheet" href="/static/newstyles.css">
+</head>
+<body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/fYkizJiWrYD6lC5U/scene.splinecode"></spline-viewer>
+    <div class="container">
+    
+        
+        <form action="/analyze" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+            <input type="text" name="user_name" placeholder="Your name " required>
+            <input type="file" name="pdf_file" accept=".pdf" required>
+            <input type="text" name="question" placeholder="Ask " required>
+            <button id="submit-btn" type="submit">
+                <span id="btn-text">Analyse</span>
+            </button>
+        </form>
+
+    </div>
+</body>
+</html>
+<script>
+function showLoading() {
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('btn-text').innerText = 'Processing...';
+  document.getElementById('loader').classList.remove('hidden');
+}
+</script>
+

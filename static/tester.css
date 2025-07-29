@@ -1,0 +1,109 @@
+body {
+    font-family: "Arial";
+    background-color: #f6dcf6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    max-height: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.wave-text span {
+    display: inline-block;
+    font-size: 2rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    color: #07050c;
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    display: block;
+    color: #1b0e1b;
+    margin: 20px 0;
+}
+
+button {
+  background-color: #4F46E5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:disabled {
+  background-color: #A5B4FC;
+  cursor: not-allowed;
+}
+
+#loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.result-box {
+  background-color: #010000;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow-y: auto;
+  max-height: 70vh;
+  box-shadow: 0 0 20px rgba(243, 233, 233, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-line;      /* <-- This preserves line breaks */
+  font-family: 'Courier New', Courier, monospace; /* Optional: monospace look */
+}
