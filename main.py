@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import shutil, os
-from test import Multiagent  # your agent setup
+from Agent import Multiagent  # your agent setup
 import json
 
 app = FastAPI()
