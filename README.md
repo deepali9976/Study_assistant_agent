@@ -1,15 +1,15 @@
 
-Study Assistant: A Tool-Augmented AI Agent for Smarter Learning
+🧠📄Study Assistant: A Tool-Augmented AI Agent for Smarter Learning✨🔍
 
 The Study Assistant Agent is a single, intelligent AI agent built with FastAPI, Phidata, and LLMs, designed to help students understand and retain information more effectively.
 Equipped with a suite of specialized tools, this agent can:
 
-📄 Read and extract text from academic PDFs
-✨ Summarize content using advanced language models
-🔍 Search the web and YouTube for relevant educational resources
-📝 Generate structured study notes
-❓ Answer user questions by grounding answers in both the uploaded PDF and external sources
-🧠 Remember user inputs (like name, previous pdfs) to personalize future suggestions
+-Read and extract text from academic PDFs 
+- Summarize content using advanced language models
+- Search the web and YouTube for relevant educational resources
+-  Generate structured study notes
+- Answer user questions by grounding answers in both the uploaded PDF and external sources
+- Remember user inputs (like name, previous pdfs) to personalize future suggestions
 
 
 Rather than a multi-agent system, this project uses one central agent that orchestrates multiple capabilities through tool-based interactions — a lightweight and modular design inspired by modern AI agent frameworks.
