@@ -1,11 +1,11 @@
 
-🧠📄Study Assistant: A Tool-Augmented AI Agent for Smarter Learning✨🔍
+## 🧠📄Study Assistant Agent: A Tool-Augmented AI Agent for Smarter Learning✨🔍
 
 A smart, interactive study assistant that allows users to upload academic PDFs, get clean summaries, ask custom questions, and receive answers enriched with relevant web and YouTube resources. Powered by **FastAPI**, **Phidata Agents**, and **LLMs from Groq (DeepSeek)** with personalized user memory and multi-user support.
 
 ---
 
-## ✨ Features
+##  Features
 
 *  **PDF Summarization**: Upload a PDF and get key points in 5–8 bullet points
 *  **Interactive Q\&A**: Ask questions based on the uploaded PDF
@@ -16,18 +16,18 @@ A smart, interactive study assistant that allows users to upload academic PDFs, 
 
 ---
 
-## 🚀 Demo
+##  Demo
 
 
-1<img width="1275" height="580" alt="Screenshot 2025-07-29 095009" src="https://github.com/user-attachments/assets/17dba76a-91cd-4a45-9ad4-0aba73e001dd" />
-2<img width="1278" height="587" alt="Screenshot 2025-07-29 095108" src="https://github.com/user-attachments/assets/f4b178a2-392a-4647-b3a4-77de95df33dd" />
-3<img width="1268" height="622" alt="Screenshot 2025-07-29 102835" src="https://github.com/user-attachments/assets/01dfe3e4-f7f7-4d2a-bc01-70ae74fa1212" />
-4<img width="1274" height="635" alt="Screenshot 2025-07-29 102930" src="https://github.com/user-attachments/assets/69c3bcda-abd0-4bb8-8ed4-792cbca5f422" />
+<img width="1275" height="580" alt="Screenshot 2025-07-29 095009" src="https://github.com/user-attachments/assets/17dba76a-91cd-4a45-9ad4-0aba73e001dd" />
+<img width="1278" height="587" alt="Screenshot 2025-07-29 095108" src="https://github.com/user-attachments/assets/f4b178a2-392a-4647-b3a4-77de95df33dd" />
+<img width="1268" height="622" alt="Screenshot 2025-07-29 102835" src="https://github.com/user-attachments/assets/01dfe3e4-f7f7-4d2a-bc01-70ae74fa1212" />
+<img width="1274" height="635" alt="Screenshot 2025-07-29 102930" src="https://github.com/user-attachments/assets/69c3bcda-abd0-4bb8-8ed4-792cbca5f422" />
 
 
 ---
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the repository
 
@@ -61,7 +61,7 @@ TOGETHER_API_KEY="your_together_key_here"
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -79,7 +79,7 @@ TOGETHER_API_KEY="your_together_key_here"
 
 ---
 
-## 🧪 How to Use
+##  How to Use
 
 1. Run the FastAPI server:
 
@@ -98,7 +98,7 @@ http://localhost:8000
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Chat-style threaded interface with memory bubble UI
 *  Export notes and answers as PDF
@@ -108,7 +108,7 @@ http://localhost:8000
 
 ---
 
-## 🤖 Technologies Used
+##  Technologies Used
 
 * [FastAPI](https://fastapi.tiangolo.com/)
 * [Phidata Agent Framework](https://docs.phidata.com/)
@@ -119,11 +119,8 @@ http://localhost:8000
 
 ---
 
-## 👩‍💻 Author
-
+##  Author
 **Deepali Umesh**
-[LinkedIn](https://www.linkedin.com/in/deepaliumesh) | [GitHub](https://github.com/yourusername)
-💡 Passionate ML engineer | Building intelligent, helpful systems
 
 ---
 
